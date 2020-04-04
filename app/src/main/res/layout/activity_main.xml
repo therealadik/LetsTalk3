@@ -24,17 +24,20 @@
     android:layout_alignParentBottom="true"
     android:layout_toLeftOf="@id/btnSend">
     <EditText
-        android:id="@+id/messageFiedl"
+        android:id="@+id/messageField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Введите сообщение..."
         />
-
 </com.google.android.material.textfield.TextInputLayout>
-
-
-
-
-
-
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_messages"
+        android:layout_above="@id/text_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:divider="@android:color/transparent"
+        android:layout_marginBottom="16dp"
+        android:dividerHeight="16dp"/>
 </RelativeLayout>
