@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fon"
     tools:context=".MainActivity"
     android:id="@+id/rel_layout">
 <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -31,14 +32,30 @@
         android:hint="Введите сообщение..."
         />
 </com.google.android.material.textfield.TextInputLayout>
+
     <ListView
+        android:id="@+id/list_messages"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/list_messages"
         android:layout_above="@id/text_layout"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="3dp"
+        android:background="@android:color/transparent"
         android:divider="@android:color/transparent"
-        android:layout_marginBottom="16dp"
-        android:dividerHeight="16dp"/>
+        android:dividerHeight="16dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/btnexit"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:src="@drawable/ic_exit"
+        app:fabSize="normal"/>
+
 </RelativeLayout>
